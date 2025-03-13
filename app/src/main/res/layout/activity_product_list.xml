@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductListActivity">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20sp"
+        app:srcCompat="@drawable/logo" />
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20sp"
+        android:clickable="true"
+        android:layout_marginStart="20sp"
+        app:srcCompat="@drawable/home" />
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20sp"
+        android:clickable="true"
+        android:layout_marginEnd="20sp"
+        app:srcCompat="@drawable/plus" />
+    <ListView
+        android:id="@+id/listProducts"
+        android:layout_width="370sp"
+        android:layout_height="550sp"
+        android:layout_marginTop="30sp"
+        android:layout_marginHorizontal="10sp"
+        android:background="@drawable/shape_roundy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
